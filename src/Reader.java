@@ -48,12 +48,12 @@ public class Reader {
         public Map<String, Integer> names;
         public Map<Integer, String> revNames;
         public Map<Integer, Integer> sect; // section
-        public Map<IntPair, Integer> prefs; // people preference
+        public int[][] prefs; // people preference
         private int counter;
 
         public Preference() {
             names = new HashMap<>();
-            prefs = new HashMap<>();
+            prefs = new int[45][45];
             revNames = new HashMap<>();
             sect = new HashMap<>();
             counter = 1;
@@ -78,7 +78,7 @@ public class Reader {
         public int getPref(int i, int j) {
             boolean section = sect.get(i).equals(sect.get(j));
             boolean platoon = ((3.5 - sect.get(i)) * (3.5 - sect.get(j))) > 0;
-            return prefs.getOrDefault(new IntPair(i, j), section ? SECTION : platoon ? PLATOON : 0);
+            return (prefs[i-1][j-1] != 0) ? prefs[i-1][j-1] : section ? SECTION : platoon ? PLATOON : 0;
         }
 
         private int recognize(String name) {
@@ -91,8 +91,8 @@ public class Reader {
         }
 
         private void addPref(int i, int j, int strength) {
-            IntPair ij = new IntPair(i, j);
-            prefs.put(ij, prefs.getOrDefault(ij, 0) + strength);
+            prefs[i-1][j-1] = prefs[i-1][j-1] + strength;
+            prefs[j-1][i-1] = prefs[i-1][j-1];
         }
     }
 

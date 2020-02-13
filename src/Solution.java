@@ -1,12 +1,13 @@
 import net.sf.javailp.*;
 
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Solution {
 
-    final static int REPS = 1;
-    final static int TIMEOUT = 100;
+    final static int REPS = 100;
+    final static int TIMEOUT = 10;
     Problem problem;
     Reader.Preference prefs;
 
@@ -24,6 +25,8 @@ public class Solution {
                 displayResult(result);
             }
         }
+        System.out.println("Overall best solution: utility of " + best.getObjective());
+        displayResult(best);
     }
 
     private void displayResult(Result result) {
@@ -50,6 +53,7 @@ public class Solution {
         setUpX();
         return solver.solve(problem);
     }
+
     private static Set<Reader.IntPair> allPairs() {
         Set<Reader.IntPair> pairs = new HashSet<>();
         for (int i = 1; i <= 45; i++) {
@@ -66,6 +70,12 @@ public class Solution {
 
     private static String varName(String prefix, int t, int i) {
         return prefix + t + String.format("%02d", i);
+    }
+
+    private static IntStream shuffleStream(int n) {
+        List<Integer> list = IntStream.range(1, n + 1).boxed().collect(Collectors.toList());
+        Collections.shuffle(list);
+        return list.stream().mapToInt(i -> i);
     }
 
     // Set up objective - maximize sum(y_abt)
@@ -108,23 +118,23 @@ public class Solution {
 
     private void setUpX() {
         // table capacity = 5
-        IntStream.range(1, 10).forEach(t -> {
+        shuffleStream(9).forEach(t -> {
             Linear full = new Linear();
-            IntStream.range(1, 46).forEach(i -> full.add(1, varName("x", t, i)));
+            shuffleStream(45).forEach(i -> full.add(1, varName("x", t, i)));
             problem.add(full, "=", 5);
         });
 
 
         // all cadets seated
-        IntStream.range(1, 46).forEach(i -> {
+        shuffleStream(45).forEach(i -> {
             Linear unique = new Linear();
-            IntStream.range(1, 10).forEach(t -> unique.add(1, varName("x", t, i)));
+            shuffleStream(9).forEach(t -> unique.add(1, varName("x", t, i)));
             problem.add(unique, "=", 1);
         });
 
         // boolean 0-1, integer
-        IntStream.range(1, 46).forEach(i -> {
-            IntStream.range(1, 10).forEach(t -> problem.setVarType(varName("x", t, i), Boolean.class));
+        shuffleStream(45).forEach(i -> {
+            shuffleStream(9).forEach(t -> problem.setVarType(varName("x", t, i), Boolean.class));
         });
     }
 

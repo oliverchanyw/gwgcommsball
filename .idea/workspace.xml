@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7600aed4-f2da-44b7-88c4-ea0f87709ab2" name="Default Changelist" comment="" />
+    <list default="true" id="7600aed4-f2da-44b7-88c4-ea0f87709ab2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/FlipSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GWG Commissioning Ball Survey.csv" beforeDir="false" afterPath="$PROJECT_DIR$/GWG Commissioning Ball Survey.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gwg/Reader$Preference.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gwg/Reader$Preference.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gwg/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gwg/Reader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gwg/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gwg/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,20 +26,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="176">
+              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#solveSeating#0;class#Solution#0" />
-                <element signature="method#displayResult#0;class#Solution#0" />
+                <element signature="e#386#630#1" />
                 <element signature="method#solveOnce#0;class#Solution#0" />
                 <element signature="method#allPairs#0;class#Solution#0" />
                 <element signature="method#varName#0;class#Solution#0" />
-                <element signature="e#1395#1456#1" />
-                <element signature="e#2139#2140#0" expanded="true" />
+                <element signature="method#shuffleStream#0;class#Solution#0" />
                 <element signature="method#setUpObjective#0;class#Solution#0" />
                 <element signature="method#setUpY#0;class#Solution#0" />
                 <element signature="method#setUpX#0;class#Solution#0" />
+                <element signature="e#3720#3897#0" />
+                <element signature="e#3970#4153#0" />
+                <element signature="e#4228#4348#0" />
+                <element signature="e#4401#4402#0" expanded="true" />
                 <element signature="e#4448#4449#0" expanded="true" />
               </folding>
             </state>
@@ -38,17 +50,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Reader.java">
+        <entry file="file://$PROJECT_DIR$/src/FlipSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state relative-caret-position="115">
+              <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1363#1422#0" />
+                <element signature="method#FlipSolution#0;class#FlipSolution#0" />
+                <element signature="method#randomlyAllocate#0;class#FlipSolution#0" />
+                <element signature="method#swap#0;class#FlipSolution#0" />
+                <element signature="e#1536#1537#0" expanded="true" />
+                <element signature="e#1566#1567#0" expanded="true" />
+                <element signature="method#shuffleStream#0;class#FlipSolution#0" />
+                <element signature="method#stayValue#0;class#FlipSolution#0" />
+                <element signature="method#swapValue#0;class#FlipSolution#0" />
+                <element signature="method#solveSeating#0;class#FlipSolution#0" />
+                <element signature="method#printSolution#0;class#FlipSolution#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GWG Commissioning Ball Survey.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-50">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#read#0;class#Reader#0" />
                 <element signature="method#Preference#0;class#Preference#0;class#Reader#0" />
                 <element signature="class#IntPair#0;class#Reader#0" />
-                <element signature="e#2696#2697#0" expanded="true" />
-                <element signature="e#2752#2753#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,49 +113,56 @@
       <find>brighton</find>
       <find>Double</find>
       <find>factory</find>
+      <find>wen</find>
+      <find>Attl</find>
+      <find>Dever</find>
+      <find>[j][i]</find>
+      <find>Ban</find>
+      <find>Jun</find>
+      <find>Mitchell</find>
+      <find>Oliver</find>
+      <find>Mark</find>
+      <find>Jordan</find>
     </findStrings>
     <replaceStrings>
       <replace>CSVFILE</replace>
+      <replace>[j-1][i-1]</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Solution.java" />
+        <option value="$PROJECT_DIR$/src/Preference.java" />
         <option value="$PROJECT_DIR$/src/Reader.java" />
+        <option value="$PROJECT_DIR$/GWG Commissioning Ball Survey.csv" />
+        <option value="$PROJECT_DIR$/src/FlipSolution.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
-    <option name="y" value="24" />
+    <option name="x" value="58" />
+    <option name="y" value="23" />
     <option name="width" value="1327" />
     <option name="height" value="804" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="commsball" type="b2602c69:ProjectViewProjectNode" />
               <item name="gwg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="commsball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gwg" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="commsball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gwg" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="commsball" type="b2602c69:ProjectViewProjectNode" />
@@ -132,7 +180,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580629960453" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581601179417" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -149,7 +197,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.FlipSolution">
+    <configuration name="FlipSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FlipSolution" />
+      <module name="gwg" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="Solution" />
@@ -188,9 +243,11 @@
     <list>
       <item itemvalue="Application.Solution" />
       <item itemvalue="Maven.build" />
+      <item itemvalue="Application.FlipSolution" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FlipSolution" />
         <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
@@ -209,46 +266,39 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="24" width="1327" height="804" extended-state="0" />
-    <editor active="true" />
+    <frame x="58" y="23" width="1327" height="804" extended-state="0" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" sideWeight="0.50209206" side_tool="true" weight="0.24980545" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.24980545" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.2536965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286517" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50209206" side_tool="true" weight="0.24980545" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37921348" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37921348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33286518" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Reader.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Reader.java</url>
           <line>80</line>
@@ -257,6 +307,15 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>alloc.get(a)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gwg.iml">
@@ -287,13 +346,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/org_ow2_sat4j_org_ow2_sat4j_core_2_3_5.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/org_ow2_sat4j_org_ow2_sat4j_core_2_3_5.xml" />
     <entry file="jar://$PROJECT_DIR$/javailp-1.2a.jar!/net/sf/javailp/SolverFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -336,38 +389,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/Preference.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#solveSeating#0;class#Solution#0" />
-            <element signature="method#displayResult#0;class#Solution#0" />
-            <element signature="method#solveOnce#0;class#Solution#0" />
-            <element signature="method#allPairs#0;class#Solution#0" />
-            <element signature="method#varName#0;class#Solution#0" />
-            <element signature="e#1395#1456#1" />
-            <element signature="e#2139#2140#0" expanded="true" />
-            <element signature="method#setUpObjective#0;class#Solution#0" />
-            <element signature="method#setUpY#0;class#Solution#0" />
-            <element signature="method#setUpX#0;class#Solution#0" />
-            <element signature="e#4448#4449#0" expanded="true" />
+            <element signature="method#Preference#0;class#Preference#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="-50">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1363#1422#0" />
+            <element signature="method#read#0;class#Reader#0" />
             <element signature="method#Preference#0;class#Preference#0;class#Reader#0" />
             <element signature="class#IntPair#0;class#Reader#0" />
-            <element signature="e#2696#2697#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GWG Commissioning Ball Survey.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#solveSeating#0;class#Solution#0" />
+            <element signature="e#386#630#1" />
+            <element signature="method#solveOnce#0;class#Solution#0" />
+            <element signature="method#allPairs#0;class#Solution#0" />
+            <element signature="method#varName#0;class#Solution#0" />
+            <element signature="method#shuffleStream#0;class#Solution#0" />
+            <element signature="method#setUpObjective#0;class#Solution#0" />
+            <element signature="method#setUpY#0;class#Solution#0" />
+            <element signature="method#setUpX#0;class#Solution#0" />
+            <element signature="e#3720#3897#0" />
+            <element signature="e#3970#4153#0" />
+            <element signature="e#4228#4348#0" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4448#4449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlipSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FlipSolution#0;class#FlipSolution#0" />
+            <element signature="method#randomlyAllocate#0;class#FlipSolution#0" />
+            <element signature="method#swap#0;class#FlipSolution#0" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="method#shuffleStream#0;class#FlipSolution#0" />
+            <element signature="method#stayValue#0;class#FlipSolution#0" />
+            <element signature="method#swapValue#0;class#FlipSolution#0" />
+            <element signature="method#solveSeating#0;class#FlipSolution#0" />
+            <element signature="method#printSolution#0;class#FlipSolution#0" />
           </folding>
         </state>
       </provider>
